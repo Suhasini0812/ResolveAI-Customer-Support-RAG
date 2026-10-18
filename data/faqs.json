@@ -1,0 +1,62 @@
+[
+  {
+    "id": "faq-001",
+    "source": "FAQ",
+    "title": "How do I reset my password?",
+    "content": "To reset your CloudSync Pro password, go to https://app.cloudsyncpro.com/login and click 'Forgot password'. Enter the email associated with your account. You will receive a reset link within 5 minutes. The link expires after 30 minutes. If you do not receive the email, check your spam folder or contact support."
+  },
+  {
+    "id": "faq-002",
+    "source": "FAQ",
+    "title": "What are the storage limits for each plan?",
+    "content": "CloudSync Pro offers three plans. Free plan: 15 GB of storage and 2 connected devices. Plus plan ($9.99/month): 2 TB storage and 10 devices. Business plan ($24.99/user/month): 5 TB per user, unlimited devices, and admin controls. All paid plans include version history for 180 days."
+  },
+  {
+    "id": "faq-003",
+    "source": "FAQ",
+    "title": "How do I enable two-factor authentication (2FA)?",
+    "content": "Go to Settings > Security > Two-Factor Authentication and click 'Enable'. You can choose SMS, an authenticator app (Google Authenticator, Authy, 1Password), or a hardware key (YubiKey). We strongly recommend an authenticator app over SMS. Save your backup codes in a safe place; you will need one if you lose access to your second factor."
+  },
+  {
+    "id": "faq-004",
+    "source": "FAQ",
+    "title": "Can I share files with people who don't have CloudSync Pro?",
+    "content": "Yes. Right-click any file or folder and choose 'Share via link'. Recipients can view or download without an account. You can set link expiration (1, 7, 30 days, or never), password protection, and disable downloads. Business plan also supports email-only access lists."
+  },
+  {
+    "id": "faq-005",
+    "source": "FAQ",
+    "title": "How do I cancel my subscription?",
+    "content": "Go to Settings > Billing > Manage subscription, then click 'Cancel plan'. Your subscription remains active until the end of the current billing period. After cancellation, your account reverts to the Free plan, but any data over 15 GB becomes read-only until you delete it or re-upgrade. We do not offer prorated refunds for the current period except where required by law."
+  },
+  {
+    "id": "faq-006",
+    "source": "FAQ",
+    "title": "Which file types are supported for preview?",
+    "content": "CloudSync Pro previews these formats in the browser: PDF, DOCX, XLSX, PPTX, TXT, MD, CSV, JPG, PNG, GIF, HEIC, MP4 (up to 500 MB), MOV, MP3, WAV. Files over 100 MB may take a few seconds to load. Unsupported types will offer a download option instead."
+  },
+  {
+    "id": "faq-007",
+    "source": "FAQ",
+    "title": "Is CloudSync Pro available on mobile?",
+    "content": "Yes. We have native apps for iOS (15.0+) and Android (10+). Download from the App Store or Google Play. The mobile app supports automatic camera roll backup, offline file access, and document scanning. There is no separate fee for mobile use."
+  },
+  {
+    "id": "faq-008",
+    "source": "FAQ",
+    "title": "How long does CloudSync Pro keep deleted files?",
+    "content": "Deleted files go to Trash and are kept for 30 days on Free, 180 days on Plus, and 365 days on Business. After that they are permanently purged and cannot be recovered. You can restore files from Trash by going to the Trash folder, right-clicking, and selecting 'Restore'."
+  },
+  {
+    "id": "faq-009",
+    "source": "FAQ",
+    "title": "Where is my data stored and is it encrypted?",
+    "content": "Data is stored in AWS data centers in the region you select at signup (US-East, US-West, EU-Frankfurt, AP-Singapore). All files are encrypted at rest with AES-256 and in transit with TLS 1.3. Business plan customers can enable customer-managed encryption keys (CMEK) via AWS KMS."
+  },
+  {
+    "id": "faq-010",
+    "source": "FAQ",
+    "title": "Do you offer a student or nonprofit discount?",
+    "content": "Yes. Students with a valid .edu email get 50% off the Plus plan. Registered 501(c)(3) nonprofits get 30% off the Business plan. Apply at https://cloudsyncpro.com/discounts and allow 3-5 business days for verification."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ticket-1042",
+    "source": "Ticket",
+    "title": "Sync stuck at 'Preparing to upload' on Windows",
+    "content": "Resolution: This is almost always caused by a corrupt local cache. On Windows, quit CloudSync Pro from the system tray, delete C:\\Users\\<user>\\AppData\\Local\\CloudSyncPro\\cache, then relaunch. If the issue persists, run the built-in diagnostic via Help > Run Diagnostics and send the resulting .zip to support. Affects desktop client versions 4.8.0 through 4.8.3."
+  },
+  {
+    "id": "ticket-1108",
+    "source": "Ticket",
+    "title": "Cannot upload files larger than 5 GB from web interface",
+    "content": "Resolution: The web uploader has a per-file cap of 5 GB. For larger files, use the desktop client which supports files up to 250 GB on Plus and 1 TB on Business. Alternatively, use the CLI: 'cloudsync push <path> --resumable'. This is a documented limitation, not a bug."
+  },
+  {
+    "id": "ticket-1175",
+    "source": "Ticket",
+    "title": "Two-factor authentication codes not working after phone reset",
+    "content": "Resolution: When the authenticator app is reset, the TOTP seed is lost and codes will not validate. The customer must use one of their saved backup codes to sign in, then re-enroll 2FA from Settings > Security. If no backup codes remain, account recovery requires identity verification: government ID plus a billing receipt sent to recovery@cloudsyncpro.com. Recovery takes 2-3 business days."
+  },
+  {
+    "id": "ticket-1230",
+    "source": "Ticket",
+    "title": "Shared link 404s for external recipient",
+    "content": "Resolution: Two common causes. (1) The link expired - check the original share settings. (2) The file's parent folder was moved to Trash, which invalidates child shares even if the file was restored later. Re-share the file to generate a fresh link. Note: organization admins can disable external sharing entirely under Admin > Sharing Policy."
+  },
+  {
+    "id": "ticket-1289",
+    "source": "Ticket",
+    "title": "Billing charged twice in the same month",
+    "content": "Resolution: Duplicate charges typically occur when a customer upgrades mid-cycle - the prorated charge can look like a second full charge on the statement. Compare the two line items in Settings > Billing > Invoices. If the amounts are identical and dated within minutes of each other, it is a true duplicate; refund the second charge and add a note to the account. Refunds process in 5-10 business days."
+  },
+  {
+    "id": "ticket-1314",
+    "source": "Ticket",
+    "title": "Files missing after upgrading from Free to Plus",
+    "content": "Resolution: Files are not deleted during plan upgrades. The most common cause is that the customer is signed into a different email than the one with their files (e.g., personal Gmail vs. work email). Verify the signed-in email matches the original account. Check Settings > Account > Email. If the emails differ, sign out and sign in with the original account."
+  },
+  {
+    "id": "ticket-1356",
+    "source": "Ticket",
+    "title": "macOS Sonoma: desktop client crashes on launch",
+    "content": "Resolution: macOS 14.4 introduced a change to system extension loading that breaks CloudSync Pro desktop client versions earlier than 5.0.2. Upgrade to 5.0.2 or later from https://cloudsyncpro.com/download. After installation, you may be prompted to approve the system extension under System Settings > Privacy & Security."
+  },
+  {
+    "id": "ticket-1402",
+    "source": "Ticket",
+    "title": "Conflict copies appearing for files I didn't edit",
+    "content": "Resolution: 'Conflict copy' files (suffixed with the device name) are created when the same file is modified on two devices before sync completes. Common triggers: editing in a desktop app while the same file is open in the web editor, or two devices syncing simultaneously after a long offline period. To prevent: close the file in all locations before editing, or use the in-app collaborative editor which merges changes automatically."
+  },
+  {
+    "id": "ticket-1478",
+    "source": "Ticket",
+    "title": "Admin can't add new seats to Business plan",
+    "content": "Resolution: Seat addition is blocked when (a) the payment method on file has failed - check Settings > Billing for a red banner, or (b) the account is past the contracted seat cap on an annual commitment - contact sales@cloudsyncpro.com to expand. Adding seats on monthly Business plans is self-serve via Admin > Members > Invite, charged prorated at the next bill."
+  },
+  {
+    "id": "ticket-1521",
+    "source": "Ticket",
+    "title": "GDPR data export request",
+    "content": "Resolution: Customers in the EU/UK can self-serve a full data export under Settings > Privacy > Export my data. The export includes all files, account metadata, and activity logs in a ZIP archive. Export generation takes up to 72 hours for accounts over 100 GB. For deletion requests, use the same page; deletion is irreversible after a 14-day grace period."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "manual-install",
+    "source": "Manual",
+    "title": "Installation and System Requirements",
+    "content": "CloudSync Pro desktop client requires Windows 10 (build 1909+) or Windows 11; macOS 12 Monterey or later; Ubuntu 20.04+, Fedora 36+, or Debian 11+. Minimum 4 GB RAM, 500 MB free disk for the application plus space for your synced files. Download from https://cloudsyncpro.com/download. Linux users can also install via 'curl -fsSL https://get.cloudsyncpro.com | sh' which sets up the apt/dnf repo. On managed devices, an MDM-deployable .pkg and .msi are available to Business customers."
+  },
+  {
+    "id": "manual-selective-sync",
+    "source": "Manual",
+    "title": "Selective Sync and Smart Sync",
+    "content": "Selective Sync lets you choose which folders sync to a specific device, useful for devices with limited disk. Open the desktop client, click your profile > Preferences > Sync, then check or uncheck folders. Smart Sync (Plus and Business only) keeps files online-only by default - they appear in your file explorer with a cloud icon and download on demand when opened. Smart Sync requires kernel extensions on macOS and the WinFsp driver on Windows; both are installed automatically."
+  },
+  {
+    "id": "manual-api",
+    "source": "Manual",
+    "title": "Developer API and Webhooks",
+    "content": "The CloudSync Pro REST API is available at https://api.cloudsyncpro.com/v2. Authentication uses OAuth 2.0 (authorization code or PKCE flow) or long-lived service tokens for server-to-server use. Rate limits: 600 requests/minute per token, 10 concurrent uploads. Webhooks can be configured under Settings > Developer > Webhooks for events: file.created, file.deleted, file.shared, member.invited, member.removed. Webhook deliveries are retried with exponential backoff up to 24 hours."
+  },
+  {
+    "id": "manual-admin-sso",
+    "source": "Manual",
+    "title": "SSO and SCIM for Business Admins",
+    "content": "Business plan supports SAML 2.0 SSO with Okta, Azure AD, Google Workspace, and any generic SAML 2.0 IdP. Configure under Admin > Authentication > SSO. After SSO is enforced, password login is disabled for managed members. SCIM 2.0 provisioning is supported - get the SCIM endpoint and bearer token from the same page. Provisioned users inherit group-based folder permissions. Domain capture is available on request to enforce SSO for all users at a verified domain."
+  },
+  {
+    "id": "manual-cli",
+    "source": "Manual",
+    "title": "Command-Line Interface (CLI)",
+    "content": "Install the CLI with 'brew install cloudsync' (macOS), 'winget install cloudsync' (Windows), or via the install script on Linux. Authenticate with 'cloudsync login'. Common commands: 'cloudsync ls /path', 'cloudsync pull /remote /local', 'cloudsync push /local /remote --resumable', 'cloudsync share /file --expires 7d --password'. The CLI honors selective sync settings and supports --json output for scripting. CLI is included with all plans."
+  }
+]
